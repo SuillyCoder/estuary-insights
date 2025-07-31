@@ -138,11 +138,31 @@ export default function ApplicationPage() {
         <hr style={{ margin: '2rem 0' }} />
 
         <div style={{ marginBottom: '1rem' }}>
-          <label htmlFor="essayQuestion">Why do you want to work here?</label><br />
+          <label htmlFor="essayQuestion1">Why are you interested in this position?</label><br />
           <textarea
-            id="essayQuestion"
-            name="essayQuestion"
-            value={formData.essayQuestion}
+            id="essayQuestion1"
+            name="essayQuestion1"
+            value={formData.essayQuestion1}
+            onChange={handleChange}
+            rows={4}
+            required
+            style={{ width: '100%' }}
+          />
+          <label htmlFor="essayQuestion2">What makes you a good fit for our company culture?</label><br />
+          <textarea
+            id="essayQuestion2"
+            name="essayQuestio2"
+            value={formData.essayQuestion2}
+            onChange={handleChange}
+            rows={4}
+            required
+            style={{ width: '100%' }}
+          />
+           <label htmlFor="essayQuestion3">Describe a challenging project you've worked on recently.</label><br />
+          <textarea
+            id="essayQuestion3"
+            name="essayQuestion3"
+            value={formData.essayQuestion3}
             onChange={handleChange}
             rows={4}
             required
