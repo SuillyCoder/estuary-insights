@@ -9,3 +9,9 @@ def get_mongodb_client() -> MongoClient:
     """
     client = pymongo.MongoClient(environ.get("MONGODB_URI"))
     return client
+
+def get_db(client, db_name: str):
+    """
+    Returns a database instance from the MongoDB client.
+    """
+    return client[db_name]
